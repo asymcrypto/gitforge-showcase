@@ -1,6 +1,3 @@
-# gitforge-showcase
-Live demonstration of GitForge - Building OSS tools using our own bounty system"
-
 # 🎯 GitForge Showcase - Building in Public
 
 **Live demonstration of GitForge's power - we're building useful OSS tools using our own bounty system!**
