@@ -1,0 +1,17 @@
+name: Update Showcase Stats
+on:
+  schedule:
+    - cron: '0 * * * *' # Hourly
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update showcase metrics
+        run: |
+          echo "Updating GitForge showcase statistics..."
+          # This will eventually call our data collector
