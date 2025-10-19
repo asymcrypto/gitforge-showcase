@@ -1,0 +1,52 @@
+
+### **File 2: .github/ISSUE_TEMPLATE/showcase-bounty.yml**
+```yaml
+name: "🎯 Showcase Bounty"
+description: "Create a bounty for the showcase project"
+title: "[Showcase]: "
+labels: ["showcase", "bounty"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for creating a showcase bounty! This helps demonstrate GitForge's power.
+
+  - type: input
+    id: equity_offer
+    attributes:
+      label: "Equity Offer (%)"
+      placeholder: "1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority Level"
+      options:
+        - "🟢 Foundation (core structure)"
+        - "🟡 Feature (user-facing)"
+        - "🔴 Advanced (complex systems)"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bounty Description"
+      description: "What specific part of the showcase are we building?"
+      placeholder: "Build the data collection system for tracking GitForge statistics..."
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance Criteria"
+      description: "What defines 'done' for this bounty?"
+      placeholder: |
+        - [ ] Feature works end-to-end
+        - [ ] Code follows project standards
+        - [ ] Documentation updated
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: "Skills Required"
+      placeholder: "JavaScript, API integration, data processing"
